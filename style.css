@@ -51,6 +51,33 @@ nav {
 }
 
 /* Hero Section */
+/* ************************************************* */
+/* Hero Section Layout */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  flex-wrap: wrap; /* responsive for mobile */
+  text-align: center;
+}
+
+/* Round Photo */
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;       /* makes image round */
+  object-fit: cover;        /* keeps aspect ratio */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3); /* soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+}
+/* ******************************************** */
 .hero {
       height: 100vh;
       display: flex;
