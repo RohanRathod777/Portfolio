@@ -2,107 +2,370 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Font+Name&display=swap">
+
 </head>
 
 <body>
-  <!-- Header -->
-  <header>
-    <nav>
-      <h1 class="logo">MyPortfolio</h1>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      <!-- header section -->
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="hero-container">
-      <!-- Your Photo -->
-      <img src="Portfolio_Profile_Image.jpg" alt="Rohan Rathod" class="profile-photo">
+      <header class="header">
 
-      <!-- Hero Text -->
-      <div class="hero-text">
-        <h2>Hello, I'm</h2>
-        <h1>Rohan Rathod</h1>
-        <h3><span class="typing"></span></h3>
-        <a href="#projects" class="btn">View My Work</a>
-      </div>
-    </div>
-  </section>
+            <a href="#home" class="logo">
+                  Rohan <span>Rathod</span></a>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a passionate web developer with experience in creating modern and responsive websites.
-      I love bringing ideas to life through clean code and interactive designs.
-    </p>
-  </section>
+            <i class="bx bx-menu" id="menu-icon"></i>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">React</div>
-      <div class="skill">Node.js</div>
-    </div>
-  </section>
+            <nav class="navbar">
+                  <a href="#home">Home</a>
+                  <a href="#about">About</a>
+                  <a href="#services">Services</a>
+                  <a href="#projects">Projects</a>
+                  <a href="#contact">Contact</a>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>Short description of the project.</p>
-        <a href="#" target="_blank">Live Demo</a> | <a href="#" target="_blank">GitHub</a>
-      </div>
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <p>Short description of the project.</p>
-        <a href="#" target="_blank">Live Demo</a> | <a href="#" target="_blank">GitHub</a>
-      </div>
-    </div>
-  </section>
+            </nav>
 
-  <!-- Resume Section -->
-  <section id="resume" class="resume">
-    <h2>Resume</h2>
-    <p>You can view or download my resume below:</p>
-    <a href="ROHAN RESUME.pdf" download class="btn">Download Resume</a>
-    <a href="ROHAN RESUME.pdf" target="_blank" class="btn">View Resume</a>
-    <a href="ROHAN CV.pdf" target="_blank" class="btn">View CV</a>
-    <a href="ROHAN CV.pdf" download class="btn">Download CV</a>
-  </section>
+            <button class="gradient-btn">Contact Me</button>
+      </header>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:rohangr7777@gmail.com">rohangr7777@gmail.com</a></p>
-    <p>Connect with me on:
-      <a href="www.linkedin.com/in/rohan-rathod-189a6331a">LinkedIn</a> |
-      <a href="https://github.com/RohanRathod777">GitHub</a>
-    </p>
-  </section>
+      <!-- Home Section -->
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Rohan. All Rights Reserved.</p>
-  </footer>
+      <section class="home" id="home">
+
+            <div class="home-content">
+                  <h1>Hi it's <span>Rohan</span></h1>
+                  <h3>i'm a <span>Web developer</span>
+                  </h3>
+                  <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem itaque blanditiis aperiam!
+                        Iste suscipit amet dolores dolorem aperiam, aspernatur repudiandae, placeat ipsum asperiores
+                        voluptas eius tempore ex possimus facere alias!
+                        Alias maxime minima, amet nam molestias tempora, est architecto laborum optio voluptatibus
+                        tempore, facere adipisci ea officia quis in similique cum quaerat qui sint quod fugit. Non
+                        possimus soluta adipisci!
+                        Doloribus, non quo itaque magnam
+
+
+                  </p>
+
+                  <div class="social-icons">
+                        <a href="#" title="GitHub">
+                              <i class="bx bxl-github"></i>
+                        </a>
+
+                        <a href="#" title="LinkedIn">
+                              <i class="bx bxl-linkedin"></i>
+                        </a>
+
+                        <a href="#" title="Instagram">
+                              <i class="bx bxl-instagram-alt"></i>
+                        </a>
+                        <a href="#" title="Twitter">
+                              <i class="bx bxl-twitter"></i>
+                        </a>
+                  </div>
+                  <div class="btn-group">
+                        <a href="#" class="btn">Hire</a>
+                        <a href="#contact" class="btn">Contact</a>
+
+                  </div>
+
+            </div>
+
+
+            <div class="home-img">
+                  <img src="Rohan.jpg" alt="">
+            </div>
+
+
+      </section>
+
+      <!-- About Section -->
+
+      <section class="about" id="about">
+
+            <div class="about-img">
+                  <img src="Rohan.jpg" alt="">
+            </div>
+
+            <div class="about-content">
+                  <h2>About <span>Me</span></h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolorum ipsa non ipsum porro
+                        explicabo asperiores qui temporibus natus sit atque nulla laboriosam, molestias incidunt magnam
+                        obcaecati quam tempora itaque?
+                        Nisi voluptatibus tempora reiciendis porro magnam officiis a, ex neque doloremque, aliquid
+                        dolorem temporibus exercitationem doloribus optio impedit. Sint vero officia atque ut. Tempora
+                        nostrum nobis culpa animi praesentium maxime!
+                        Numquam laborum facilis eius ea ex quibusdam? Minus earum accusamus molestias officiis
+                        reprehenderit cum laudantium sequi quidem. Ea nulla error nobis itaque minima dolore culpa. Sint
+                        corporis cum laborum molestias!</p>
+
+                  <a href="#" class="btn">Read More</a>
+
+            </div>
+
+      </section>
+
+      <!-- Services Section -->
+
+      <section class="services" id="services">
+
+            <h2 class="heading">Services</h2>
+            <div class="services-container">
+
+                  <div class="service-box">
+
+                        <div class="service-info">
+
+                              <i class="bx bxl-figma"></i>
+                              <h4>UI/UXDesign</h4>
+                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint a sit laborum,
+                                    laudantium necessitatibus iure molestias adipisci pariatur ea ut nisi mollitia
+                                    fugiat culpa voluptates beatae suscipit, quisquam animi dolorem!
+                                    Provident, sint accusamus earum blanditiis temporibus distinctio ad eius a
+                                    accusantium quo. Asperiores, distinctio voluptatem, iure libero enim aliquam porro
+                                    esse amet voluptas repudiandae reprehenderit. Quisquam quo in quidem delectus?</p>
+
+                        </div>
+                  </div>
+
+
+                  <div class="service-box">
+
+                        <div class="service-info">
+
+                              <i class="bx bx-code"></i>
+                              <h4>Frontend Development</h4>
+                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint a sit laborum,
+                                    laudantium necessitatibus iure molestias adipisci pariatur ea ut nisi mollitia
+                                    fugiat culpa voluptates beatae suscipit, quisquam animi dolorem!
+                                    Provident, sint accusamus earum blanditiis temporibus distinctio ad eius a
+                                    accusantium quo. Asperiores, distinctio voluptatem, iure libero enim aliquam porro
+                                    esse amet voluptas repudiandae reprehenderit. Quisquam quo in quidem delectus?</p>
+
+                        </div>
+                  </div>
+
+
+
+                  <div class="service-box">
+
+                        <div class="service-info">
+
+                              <i class="bx bx-code-curly"></i>
+                              <h4>Backend Development</h4>
+                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint a sit laborum,
+                                    laudantium necessitatibus iure molestias adipisci pariatur ea ut nisi mollitia
+                                    fugiat culpa voluptates beatae suscipit, quisquam animi dolorem!
+                                    Provident, sint accusamus earum blanditiis temporibus distinctio ad eius a
+                                    accusantium quo. Asperiores, distinctio voluptatem, iure libero enim aliquam porro
+                                    esse amet voluptas repudiandae reprehenderit. Quisquam quo in quidem delectus?</p>
+
+                        </div>
+                  </div>
+
+
+            </div>
+
+      </section>
+
+      <!-- Projects Section -->
+
+      <section class="projects" id="projects">
+
+            <h2 class="heading">Projects</h2>
+
+            <div class="projects-box">
+
+                  <div class="project-card">
+
+                        <img src="portfolio image.png" alt="">
+                        <h3>Project 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet magnam aperiam
+                              blanditiis quia id repudiandae repellat voluptas, facilis pariatur ipsa soluta atque vel
+                              quasi porro quam, suscipit libero a!
+                              Aliquid perferendis accusamus voluptatibus, rem atque quidem sed consequuntur et alias.
+                              Debitis facilis in dolores corrupti. Sapiente voluptatum, quam sit doloribus illo
+                        </p>
+                        <div class="btn">Review Project</div>
+                  </div>
+
+
+                  <div class="project-card">
+
+                        <img src="portfolio image.png" alt="">
+                        <h3>Project 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet magnam aperiam
+                              blanditiis quia id repudiandae repellat voluptas, facilis pariatur ipsa soluta atque vel
+                              quasi porro quam, suscipit libero a!
+                              Aliquid perferendis accusamus voluptatibus, rem atque quidem sed consequuntur et alias.
+                              Debitis facilis in dolores corrupti. Sapiente voluptatum, quam sit doloribus illo
+                        </p>
+                        <div class="btn">Review Project</div>
+                  </div>
+
+
+                  <div class="project-card">
+
+                        <img src="portfolio image.png" alt="">
+                        <h3>Project 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet magnam aperiam
+                              blanditiis quia id repudiandae repellat voluptas, facilis pariatur ipsa soluta atque vel
+                              quasi porro quam, suscipit libero a!
+                              Aliquid perferendis accusamus voluptatibus, rem atque quidem sed consequuntur et alias.
+                              Debitis facilis in dolores corrupti. Sapiente voluptatum, quam sit doloribus illo
+                        </p>
+                        <div class="btn">Review Project</div>
+                  </div>
+
+
+                  <div class="project-card">
+
+                        <img src="portfolio image.png" alt="">
+                        <h3>Project 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet magnam aperiam
+                              blanditiis quia id repudiandae repellat voluptas, facilis pariatur ipsa soluta atque vel
+                              quasi porro quam, suscipit libero a!
+                              Aliquid perferendis accusamus voluptatibus, rem atque quidem sed consequuntur et alias.
+                              Debitis facilis in dolores corrupti. Sapiente voluptatum, quam sit doloribus illo
+                        </p>
+                        <div class="btn">Review Project</div>
+                  </div>
+
+
+                  <div class="project-card">
+
+                        <img src="portfolio image.png" alt="">
+                        <h3>Project 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet magnam aperiam
+                              blanditiis quia id repudiandae repellat voluptas, facilis pariatur ipsa soluta atque vel
+                              quasi porro quam, suscipit libero a!
+                              Aliquid perferendis accusamus voluptatibus, rem atque quidem sed consequuntur et alias.
+                              Debitis facilis in dolores corrupti. Sapiente voluptatum, quam sit doloribus illo
+                        </p>
+                        <div class="btn">Review Project</div>
+                  </div>
+
+
+                  <div class="project-card">
+
+                        <img src="portfolio image.png" alt="">
+                        <h3>Project 5</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet magnam aperiam
+                              blanditiis quia id repudiandae repellat voluptas, facilis pariatur ipsa soluta atque vel
+                              quasi porro quam, suscipit libero a!
+                              Aliquid perferendis accusamus voluptatibus, rem atque quidem sed consequuntur et alias.
+                              Debitis facilis in dolores corrupti. Sapiente voluptatum, quam sit doloribus illo
+                        </p>
+                        <div class="btn">Review Project</div>
+                  </div>
+
+
+                  <div class="project-card">
+
+                        <img src="portfolio image.png" alt="">
+                        <h3>Project 6</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet magnam aperiam
+                              blanditiis quia id repudiandae repellat voluptas, facilis pariatur ipsa soluta atque vel
+                              quasi porro quam, suscipit libero a!
+                              Aliquid perferendis accusamus voluptatibus, rem atque quidem sed consequuntur et alias.
+                              Debitis facilis in dolores corrupti. Sapiente voluptatum, quam sit doloribus illo
+                        </p>
+                        <div class="btn">Review Project</div>
+                  </div>
+
+            </div>
+
+      </section>
+
+
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+
+            <form action="#">
+
+                  <div class="input-group">
+
+                        <div class="input-box">
+                              <input type="text" placeholder="Full Name">
+                              <input type="email" placeholder="Email">
+                        </div>
+
+                        <div class="input-box">
+                              <input type="number" placeholder="Phone Number">
+                              <input type="text" placeholder="Subject">
+                        </div>
+
+                  </div>
+
+                  <div class="input-group-2">
+
+                        <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
+                        <input type="submit" value="Send Message" class="btn">
+                  </div>
+
+            </form>
+      </section>
+
+
+      <!-- Footer Section -->
+      <footer class="footer">
+
+
+            <div class="social-icons">
+                  <a href="#" title="GitHub">
+                        <i class="bx bxl-github"></i>
+                  </a>
+
+                  <a href="#" title="LinkedIn">
+                        <i class="bx bxl-linkedin"></i>
+                  </a>
+
+                  <a href="#" title="Instagram">
+                        <i class="bx bxl-instagram-alt"></i>
+                  </a>
+                  <a href="#" title="Twitter">
+                        <i class="bx bxl-twitter"></i>
+                  </a>
+            </div>
+
+            <ul class="list">
+
+                  <li>
+                        <a href="#">FAQ</a>
+                  </li>
+
+                  <li>
+                        <a href="#services">Services</a>
+                  </li>
+
+                  <li>
+                        <a href="#about">About Me</a>
+                  </li>
+
+                  <li>
+                        <a href="#projects">Projects</a>
+                  </li>
+
+                  <li>
+                        <a href="#contact">Contact</a>
+                  </li>
+
+            </ul>
+
+            <p class="copyright">
+                  © Rohan Rathod | All Rights Reserved
+            </p>
+
+      </footer>
+
+      <script src="script.js"></script>
 </body>
 
 </html>
