@@ -40,13 +40,13 @@ body {
       justify-content: space-between;
       align-items: center;
       z-index: 1000;
-
 }
 
 #menu-icon {
       font-size: 3.5rem;
       color: var(--main-color);
-      display: block;
+      display: none;
+      cursor: pointer;
 }
 
 .logo {
@@ -62,9 +62,7 @@ body {
 }
 
 span {
-      background: linear-gradient(270deg,
-                  #DF8908 10%,
-                  #ff1d15 100%);
+      background: linear-gradient(270deg, #df8908 10%, #ff1d15 100%);
       background-clip: text;
       color: transparent;
 }
@@ -87,22 +85,18 @@ span {
       font-size: 3rem;
       padding: 1rem 2rem;
       border-radius: 3rem;
-      background: linear-gradient(270deg,
-                  #DF8908 10%,
-                  #ff1d15 100%);
+      background: linear-gradient(270deg, #df8908 10%, #ff1d15 100%);
       letter-spacing: 1px;
       cursor: pointer;
       transition: 0.3s ease-in-out;
       color: white;
       border: none;
       white-space: nowrap;
-
 }
 
 .gradient-btn:hover {
       transform: scale(1.05);
 }
-
 
 section {
       min-height: 100vh;
@@ -154,8 +148,7 @@ section {
 }
 
 .home-img img:hover {
-      box-shadow: 0 0 25px var(--main-color),
-            0 0 50px var(--main-color),
+      box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
             0 0 100px var(--main-color);
 }
 
@@ -182,7 +175,7 @@ section {
 .social-icons a:hover {
       color: var(--text-color);
       background-color: var(--main-color);
-      transform: scale(1.2)translateY(-5px);
+      transform: scale(1.2) translateY(-5px);
       box-shadow: 0 0 25px var(--main-color);
 }
 
@@ -207,8 +200,7 @@ section {
 
 .btn:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 25px var(--main-color),
-            0 0 50px var(--main-color);
+      box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
 }
 
 .btn-group a:nth-of-type(2) {
@@ -242,8 +234,7 @@ section {
 }
 
 .about-img img:hover {
-      box-shadow: 0 0 25px var(--main-color),
-            0 0 50px var(--main-color),
+      box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
             0 0 100px var(--main-color);
 }
 
@@ -280,7 +271,6 @@ section {
       text-align: center;
       font-size: 7rem;
       margin: 5rem 0;
-
 }
 
 .services {
@@ -317,7 +307,6 @@ section {
       color: var(--main-color);
       border: 5px solid var(--main-color);
       transform: scale(1.03);
-
 }
 
 .service-info {
@@ -377,8 +366,7 @@ section {
 }
 
 .project-card:hover {
-      box-shadow: 0 0 25px var(--main-color),
-            0 0 50px var(--main-color);
+      box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
       transform: scale(1.02);
 }
 
@@ -396,6 +384,43 @@ section {
       font-size: 1.6rem;
 }
 
+/* Resume Section */
+.resume {
+      padding: 272px 20px;
+      text-align: center;
+      background: var(--bg-color);
+}
+
+.resume h2 {
+      text-align: center;
+      font-size: 6.5rem;
+      /* margin: rem 0; */
+}
+
+.resume p {
+      text-align: center;
+      font-size: 3.5rem;
+      margin: 2rem 0;
+}
+
+.resume .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      margin: 10px;
+      padding: 15px 30px;
+      background: var(--main-color);
+      color: var(--bg-color);
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.3s;
+      border-radius: 10rem;
+      font-size: 1.9rem;
+}
+
+.resume .btn:hover {
+      transform: scale(1.05);
+}
+
 /* Contact Section */
 
 .contact {
@@ -407,19 +432,46 @@ section {
       color: var(--text-color);
 }
 
-.contact form {
+.contact-info {
+      text-align: center;
+      margin-bottom: 4rem;
+}
 
+.contact-email {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+}
+
+.contact-email a {
+      color: var(--main-color);
+      text-decoration: none;
+      transition: 0.3s ease;
+}
+
+.contact-email a:hover {
+      color: #ff1d15;
+      text-decoration: underline;
+}
+
+.contact-note {
+      font-size: 1.8rem;
+      color: #cfd2dc;
+      font-style: italic;
+}
+
+.contact form {
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       gap: 3rem;
       margin: 5rem 0;
-
 }
 
 .input-group {
-      display: flex;
+      display: block;
+      background-color: var(--bg-color);
       gap: 2rem;
       margin-bottom: 2rem;
 }
@@ -448,6 +500,81 @@ section {
       border: 2px solid var(--main-color);
       margin: 1.5rem 0;
       resize: none;
+      min-height: auto;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+}
+
+.contact form .input-box input:focus,
+.contact form textarea:focus {
+      outline: none;
+      border-color: #ff1d15;
+      box-shadow: 0 0 10px rgba(255, 29, 21, 0.3);
+}
+
+.phone-input-wrapper {
+      position: relative;
+      width: 100%;
+      padding: 2.5rem;
+      font-size: 1.8rem;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      border-radius: 2rem;
+      border: 2px solid var(--main-color);
+      margin: 1.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      min-height: auto;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+}
+
+.phone-input-wrapper:focus-within {
+      border-color: #ff1d15;
+      box-shadow: 0 0 10px rgba(255, 29, 21, 0.3);
+}
+
+.country-dropdown {
+      background: transparent;
+      border: none;
+      color: var(--main-color);
+      font-size: 1.8rem;
+      cursor: pointer;
+      padding: 0;
+      width: 50px;
+      flex-shrink: 0;
+      outline: none;
+
+
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+}
+
+/* #phone-number {
+      border: none;
+} */
+
+.country-dropdown option {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      padding: 1rem;
+}
+
+.phone-input-unified {
+      background: transparent;
+      border: none;
+      font-size: 1.8rem;
+      color: var(--text-color);
+      flex: 1;
+      padding: 0;
+      outline: none;
+      height: auto;
+}
+
+.phone-input-unified::placeholder {
+      color: rgba(230, 232, 239, 0.6);
 }
 
 /* Footer Section */
@@ -489,7 +616,7 @@ section {
       font-size: 16px;
 }
 
-@media(max-width:1285px) {
+@media (max-width: 1285px) {
       #menu-icon {
             display: block;
       }
@@ -560,5 +687,4 @@ section {
       .contact form {
             flex-direction: column;
       }
-
 }
