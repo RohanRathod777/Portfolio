@@ -2,27 +2,27 @@ let menuIcon = document.querySelector("#menu-icon");
 let navBar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
-      menuIcon.classList.toggle('bx-x');
-      navBar.classList.toggle('active');
+    menuIcon.classList.toggle('bx-x');
+    navBar.classList.toggle('active');
 }
 
 // Formspree Form Handling
-window.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("DOMContentLoaded", function () {
     var form = document.querySelector("form");
-    
+
     if (form) {
-        form.addEventListener("submit", function(e) {
+        form.addEventListener("submit", function (e) {
             e.preventDefault();
-            
+
             var submitBtn = form.querySelector('input[type="submit"]');
             var originalText = submitBtn.value;
-            
+
             // Show loading state
             submitBtn.value = "Sending...";
             submitBtn.disabled = true;
-            
+
             var formData = new FormData(form);
-            
+
             fetch(form.action, {
                 method: "POST",
                 body: formData,
@@ -47,19 +47,19 @@ window.addEventListener("DOMContentLoaded", function() {
             });
         });
     }
-    
+
     function showMessage(message, type) {
         // Remove existing messages
         var existingMsg = document.querySelector('.form-message');
         if (existingMsg) {
             existingMsg.remove();
         }
-        
+
         // Create new message
         var messageDiv = document.createElement('div');
         messageDiv.className = 'form-message ' + type;
         messageDiv.textContent = message;
-        
+
         // Style the message
         messageDiv.style.cssText = `
             position: fixed;
@@ -77,9 +77,9 @@ window.addEventListener("DOMContentLoaded", function() {
             max-width: 400px;
             word-wrap: break-word;
         `;
-        
+
         document.body.appendChild(messageDiv);
-        
+
         // Auto remove after 5 seconds
         setTimeout(() => {
             if (messageDiv.parentNode) {
