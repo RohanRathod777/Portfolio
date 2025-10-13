@@ -42,6 +42,11 @@ body {
       z-index: 1000;
 }
 
+.header.sticky {
+      background: var(--bg-color);
+      border-bottom: 1px solid var(--second-bg-color);
+}
+
 #menu-icon {
       font-size: 3.5rem;
       color: var(--main-color);
@@ -76,7 +81,8 @@ span {
       border-bottom: 3px solid transparent;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.navbar a.active {
       color: var(--main-color);
       border-bottom: 3px solid var(--main-color);
 }
@@ -96,6 +102,30 @@ span {
 
 .gradient-btn:hover {
       transform: scale(1.05);
+}
+
+.scroll-top {
+      position: fixed;
+      bottom: 2.5rem;
+      right: 2.5rem;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      background: var(--main-color);
+      border-radius: 50%;
+      z-index: 1000;
+      cursor: pointer;
+      transition: 0.3s;
+}
+
+.scroll-top i {
+      font-size: 2.5rem;
+      color: var(--text-color);
+}
+
+.scroll-top:hover {
+      background: #ff1d15;
 }
 
 section {
@@ -361,12 +391,14 @@ section {
       border: 5px solid transparent;
       transition: 0.4s ease-in-out;
       padding: 2rem;
-      /* use padding instead of fixed height */
+      color: var(--second-bg-color);
+      /* Base text color */
 }
 
 .service-box:hover {
       background: var(--second-bg-color);
       color: var(--main-color);
+      /* Text color on hover */
       border: 5px solid var(--main-color);
       transform: scale(1.03);
 }
@@ -381,22 +413,25 @@ section {
 }
 
 .service-info h4 {
-      color: var(--second-bg-color);
       font-size: 4rem;
       margin: 2rem 0;
       font-weight: 800;
+      color: inherit;
+      /* Inherit from .service-box */
 }
 
 .service-info p {
-      color: var(--second-bg-color);
       font-size: 1.4rem;
       font-weight: 600;
       line-height: 1.7;
+      color: inherit;
+      /* Inherit from .service-box */
 }
 
 .service-info i {
-      color: var(--second-bg-color);
       font-size: 8rem;
+      color: inherit;
+      /* Inherit from .service-box */
 }
 
 @media (max-width: 600px) {
@@ -460,14 +495,19 @@ section {
 }
 
 .project-card:hover {
-      box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+      box-shadow: 0 0 15px var(--main-color);
       transform: scale(1.02);
+}
+
+.project-card:hover img {
+      transform: scale(1.1) rotate(3deg);
 }
 
 .project-card img {
       max-width: 300px;
       border-radius: 3em;
       object-fit: cover;
+      transition: 0.5s ease;
 }
 
 .project-card h3 {

@@ -1,10 +1,66 @@
 let menuIcon = document.querySelector("#menu-icon");
 let navBar = document.querySelector('.navbar');
+let header = document.querySelector('.header');
+let scrollTop = document.querySelector('.scroll-top');
+
+window.onscroll = () => {
+    header.classList.toggle('sticky', window.scrollY > 100);
+    scrollTop.style.display = window.scrollY > 100 ? 'flex' : 'none';
+
+    menuIcon.classList.remove('bx-x');
+    navBar.classList.remove('active');
+
+    let sections = document.querySelectorAll('section');
+    let navLinks = document.querySelectorAll('.navbar a');
+
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('.navbar a[href*=' + id + ']').classList.add('active');
+            });
+        }
+    });
+};
+
+scrollTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navBar.classList.toggle('active');
 }
+
+// Typed.js
+var typed = new Typed('.typed-text', {
+    strings: ['Web Developer', 'UI/UX Designer', 'Backend Developer', 'C Programmer'],
+    typeSpeed: 50,
+    backSpeed: 50,
+    backDelay: 1000,
+    loop: true
+});
+
+// ScrollReveal
+ScrollReveal({
+    reset: true,
+    distance: '30px',
+    duration: 1000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-container, .projects-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 // Formspree Form Handling
 window.addEventListener("DOMContentLoaded", function () {
@@ -88,8 +144,6 @@ window.addEventListener("DOMContentLoaded", function () {
         }, 5000);
     }
 });
-
-
 // Review Modal functionality
 
 const modal = document.getElementById('reviewModal');
