@@ -10,6 +10,7 @@
       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Font+Name&display=swap">
+      <link rel="stylesheet" href="index.html">
 
 </head>
 
@@ -219,116 +220,73 @@
 
             <div class="projects-box">
 
-                  <div class="project-card">
-
+                  <div class="project-card" data-project="Project 1">
                         <img src="portfolio image.png" alt="">
                         <h3>Project 1</h3>
                         <p>
                               Developed a fully responsive personal portfolio website to showcase projects and skills.
-
                               Implemented interactive elements and animations using JavaScript.
-
                               Designed a modern UI/UX layout for seamless navigation and user experience.
-
                               Highlighted projects with dynamic sections and smooth scrolling effects.
-
                               Focused on clean code structure and mobile-friendly design.
                         </p>
-                        <div class="btn">Review Project</div>
+                        <div class="overall-rating">Overall Rating : <span class="rating-stars">Not Rated</span></div>
+                        <div class="btn review-btn">Review Project</div>
                   </div>
 
-
-                  <div class="project-card">
-
+                  <div class="project-card" data-project="Project 2">
                         <img src="amazon project.png" alt="">
                         <h3>Project 2</h3>
                         <p>
                               Developed a responsive front-end replica of the Amazon website.
-
                               Focused on layout design, navigation bar, product cards, and footer.
-
                               Implemented a clean and modern UI similar to the original Amazon interface.
-
                               Practiced positioning, flexbox, and grid layouts for responsive design.
-
                               Demonstrated attention to detail in styling and overall website structure.
                         </p>
-                        <div class="btn">Review Project</div>
+                        <div class="overall-rating">Overall Rating : <span class="rating-stars">Not Rated</span></div>
+                        <div class="btn review-btn">Review Project</div>
                   </div>
 
-
-                  <div class="project-card">
-
-                        <img src="portfolio image.png" alt="">
-                        <h3>Project 3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet magnam aperiam
-                              blanditiis quia id repudiandae repellat voluptas, facilis pariatur ipsa soluta atque vel
-                              quasi porro quam, suscipit libero a!
-                              Aliquid perferendis accusamus voluptatibus, rem atque quidem sed consequuntur et alias.
-                              Debitis facilis in dolores corrupti. Sapiente voluptatum, quam sit doloribus illo
-                        </p>
-                        <div class="btn">Review Project</div>
-                  </div>
-
-
-                  <div class="project-card">
-
-                        <img src="portfolio image.png" alt="">
-                        <h3>Project 4</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet magnam aperiam
-                              blanditiis quia id repudiandae repellat voluptas, facilis pariatur ipsa soluta atque vel
-                              quasi porro quam, suscipit libero a!
-                              Aliquid perferendis accusamus voluptatibus, rem atque quidem sed consequuntur et alias.
-                              Debitis facilis in dolores corrupti. Sapiente voluptatum, quam sit doloribus illo
-                        </p>
-                        <div class="btn">Review Project</div>
-                  </div>
-
-
-                  <div class="project-card">
-
-                        <img src="portfolio image.png" alt="">
-                        <h3>Project 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet magnam aperiam
-                              blanditiis quia id repudiandae repellat voluptas, facilis pariatur ipsa soluta atque vel
-                              quasi porro quam, suscipit libero a!
-                              Aliquid perferendis accusamus voluptatibus, rem atque quidem sed consequuntur et alias.
-                              Debitis facilis in dolores corrupti. Sapiente voluptatum, quam sit doloribus illo
-                        </p>
-                        <div class="btn">Review Project</div>
-                  </div>
-
-
-                  <div class="project-card">
-
-                        <img src="portfolio image.png" alt="">
-                        <h3>Project 5</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet magnam aperiam
-                              blanditiis quia id repudiandae repellat voluptas, facilis pariatur ipsa soluta atque vel
-                              quasi porro quam, suscipit libero a!
-                              Aliquid perferendis accusamus voluptatibus, rem atque quidem sed consequuntur et alias.
-                              Debitis facilis in dolores corrupti. Sapiente voluptatum, quam sit doloribus illo
-                        </p>
-                        <div class="btn">Review Project</div>
-                  </div>
-
-
-                  <div class="project-card">
-
-                        <img src="portfolio image.png" alt="">
-                        <h3>Project 6</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet magnam aperiam
-                              blanditiis quia id repudiandae repellat voluptas, facilis pariatur ipsa soluta atque vel
-                              quasi porro quam, suscipit libero a!
-                              Aliquid perferendis accusamus voluptatibus, rem atque quidem sed consequuntur et alias.
-                              Debitis facilis in dolores corrupti. Sapiente voluptatum, quam sit doloribus illo
-                        </p>
-                        <div class="btn">Review Project</div>
-                  </div>
+                  <!-- Repeat other project cards as needed -->
 
             </div>
 
       </section>
+
+
+      <!-- Review Modal HTML -->
+      <div id="reviewModal" class="modal">
+            <div class="modal-content">
+                  <h3>Leave a Review for <span id="modalProjectName"></span></h3>
+                  <form id="reviewForm">
+                        <input type="text" id="reviewerName" placeholder="Your name" required />
+                        <input type="email" id="reviewerEmail" name="email" placeholder="Your email" required />
+
+                        <label>Rating:</label>
+                        <div class="star-rating">
+                              <span class="star" data-value="1">&#9733;</span>
+                              <span class="star" data-value="2">&#9733;</span>
+                              <span class="star" data-value="3">&#9733;</span>
+                              <span class="star" data-value="4">&#9733;</span>
+                              <span class="star" data-value="5">&#9733;</span>
+                        </div>
+
+                        <input type="hidden" id="reviewRating" required />
+                        <textarea id="reviewText" placeholder="Write your review..." required></textarea>
+
+                        <div class="modal-buttons">
+                              <button type="submit">Submit</button>
+                              <button type="button" id="closeModal">Cancel</button>
+                        </div>
+                  </form>
+
+            </div>
+      </div>
+
+      <!-- On-screen Alert -->
+      <div id="alertBox" class="alert-box">Review submitted successfully!</div>
+
 
       <!-- Resume Section -->
 
