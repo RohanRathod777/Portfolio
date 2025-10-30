@@ -67,7 +67,7 @@ Check it out here: [https://portfolio-539c.vercel.app/](https://portfolio-539c.v
 
 ---
 
-**Made with ❤️ by Rohan Rathod**
+                                             **Made with ❤️ by Rohan Rathod**
 
 
 ---
