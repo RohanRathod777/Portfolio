@@ -1,6 +1,12 @@
+# 🌐 Rohan Rathod's Portfolio 💼
+> Showcasing my skills, projects, and creativity in web development 🚀
+
+````markdown
 # 🌐 Portfolio
 
 ### Personal portfolio website by **Rohan Rathod**
+
+**🔗 Live Demo:** [https://portfolio-539c.vercel.app/](https://portfolio-539c.vercel.app/)
 
 ---
 
@@ -31,7 +37,6 @@ It showcases my **skills**, **projects**, and **resume** in a clean, responsive 
 
 ## 📁 Repository Structure
 
-
 **Explanation:**  
 - `index.html` → Main website structure  
 - `style.css` → All custom styles and animations  
@@ -47,8 +52,21 @@ To view or edit this project locally:
 1. **Clone the repository**
    ```bash
    git clone https://github.com/RohanRathod777/Portfolio.git
+````
+
+2. Open `index.html` in your browser to see the portfolio locally.
+3. Edit content, styles, or scripts as needed to customize your portfolio.
 
 ---
 
-Would you like me to add a **“Live Demo” link section** at the bottom (for when you host it on Vercel or Netlify)?  
-I can also make a **small banner image** that matches your portfolio’s style to place at the top of this README.
+## 🔗 Live Demo
+
+Check it out here: [https://portfolio-539c.vercel.app/](https://portfolio-539c.vercel.app/)
+
+---
+
+**Made with ❤️ by Rohan Rathod**
+
+```
+
+---
